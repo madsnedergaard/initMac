@@ -67,7 +67,7 @@ fi
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
 
 
-# Sublime Command
+# DotVhosts
 #################
 git clone git@github.com:madsnedergaard/dotVhosts.git ~/vhosts
 
