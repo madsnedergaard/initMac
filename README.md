@@ -41,10 +41,10 @@ Automated installation of:
 
 **AND**
 
-- [Customized bash-profile](https://github.com/madsnedergaard) (aliases, functions, etc.)
+- Customized bash-profile (aliases, functions, etc.)
 - [dotVhosts](github.com/madsnedergaard/dotVhosts)
 - Git configuration
-- [OSX Hacks](https://github.com/madsnedergaard)
+- OSX Hacks ([laptop.local #L152](https://github.com/madsnedergaard/cleandevmachine/blob/master/laptop.local#L152))
 - Python and pip
 - Zprezto
 - Global Nodejs Packages
