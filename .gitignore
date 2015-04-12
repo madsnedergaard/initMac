@@ -1,0 +1,9 @@
+*.sublime-project
+*.sublime-workspace
+/*.DS_Store
+.DS_Store
+sftp-config.json
+/backup/
+/.sass-cache/
+/tmp/
+/node_modules/

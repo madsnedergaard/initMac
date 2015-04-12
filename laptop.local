@@ -1,0 +1,241 @@
+# Getting applications
+######################
+
+for cask in alfred dropbox filezilla firefox flash flux google-chrome iterm2 sequel-pro shiftit skype slack sourcetree spotify spotifree spotify-notifications sublime-text the-unarchiver virtualbox vlc; do
+	if ! cask_installed $cask; then
+		brew cask install $cask
+	fi
+done
+
+brew cask cleanup
+
+
+# Git setup
+###########
+
+if [[ ! -e ~/.gitconfig ]]; then
+	echo "\n"
+	echo "Fetching a base .gitconfig file"
+
+	# A sensible default git config, minus personal data
+	curl https://raw.githubusercontent.com/robmiller/dotfiles/master/gitconfig | tail -n+4 >> ~/.gitconfig
+fi
+
+if ! grep -q email ~/.gitconfig; then
+	echo "\n"
+	echo "Configuring personal information for Git"
+
+	# Prompt the user for their personal information, to use in the
+	# .gitconfig file
+	fullname=
+	email=
+	vared -p "What's your full name? " fullname
+	vared -p "What's your email address? " email
+
+	echo "Setting git config to use $fullname <$email>."
+	git config --global user.name "$fullname"
+	git config --global user.email "$email"
+fi
+
+
+# Python and pip
+################
+
+command_exists "pip" || sudo easy_install pip
+
+command_exists "http" || sudo pip install httpie
+
+
+# Dock
+######
+
+# Wipe all (default) app icons from the Dock
+# This is only really useful when setting up a new Mac, or if you don’t use
+# the Dock to launch apps.
+
+read -p "Clean dock? (removes all icons)" -n 1 -r
+echo    # (optional) move to a new line
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+	defaults write com.apple.dock persistent-apps -array
+    exit 1
+fi
+
+# Sublime Command
+#################
+
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
+
+
+# Sublime Command
+#################
+git clone git@github.com:madsnedergaard/dotVhosts.git ~/vhosts
+
+
+# Zprezto
+#########
+
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+# Create a new Zsh configuration by copying the Zsh configuration files provided:
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+	ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+
+
+# Global Node Packages (yo grunt)
+######################
+
+
+    # Check for npm
+    if type_exists 'npm'; then
+
+        npm_list=$(npm list -g 2> /dev/null)
+
+        # ======================================================================
+        # Update npm packages
+        # ======================================================================
+
+        e_header "Updating Node.js Packages..."
+        # Update npm packages globally and quietly
+        npm update --global --quiet
+        [[ $? -eq 0 ]] && e_success "Done"
+
+        # ======================================================================
+        # Install packages
+        # ======================================================================
+
+        e_header "Installing missing Node.js Packages..."
+
+        local packages
+        local -a missing_packages
+        local -a desired_packages
+
+        # List of npm packages
+        desired_packages=(
+            "bower"
+            "grunt-cli"
+            "jshint"
+            "yo"
+        )
+
+        for i in $desired_packages; do
+            if ! npm_exists "${i[(w)1]}"; then
+                missing_packages+=("$i")
+            fi
+        done
+
+
+        if [[ -n $missing_packages ]]; then
+            packages=$( printf "%s " $missing_packages )
+
+            # Install packages globally
+            npm install --global --quiet $( printf $packages )
+        fi
+
+        [[ $? -eq 0 ]] && e_success "Done"
+
+        # ======================================================================
+        # Cleanup
+        # ======================================================================
+
+        unset npm_list
+    else
+        printf "\n"
+        e_error "Error: npm not found."
+        printf "Aborting...\n"
+        exit
+    fi
+
+
+# OSX Hacks
+###########
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+# Trackpad: enable tap to click for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+# Disable auto-correct
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Save screenshots to folder
+defaults write com.apple.screencapture location -string "${HOME}/Desktop/screenshots"
+
+# showing 'Library' folder in home directory
+chflags nohidden ~/Library
+
+
+# Show icons for hard drives, servers, and removable media on the desktop
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+
+# Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Finder: show hidden files by default
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# Disable the warning when changing a file extension
+#defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Avoid creating .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+
+# Show item info near icons on the desktop and in other icon views
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
+
+# Show item info to the right of the icons on the desktop
+/usr/libexec/PlistBuddy -c "Set DesktopViewSettings:IconViewSettings:labelOnBottom false" ~/Library/Preferences/com.apple.finder.plist
+
+# Enable snap-to-grid for icons on the desktop and in other icon views
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+
+# Use list view in all Finder windows by default
+# Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+# Remove Dropbox’s green checkmark icons in Finder
+file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
+[ -e "${file}" ] && mv -f "${file}" "${file}.bak"
+
+# Show indicator lights for open applications in the Dock
+defaults write com.apple.dock show-process-indicators -bool true
+
+# Wipe all (default) app icons from the Dock
+# This is only really useful when setting up a new Mac, or if you don’t use
+# the Dock to launch apps.
+defaults write com.apple.dock persistent-apps -array
+
+# Disable Dashboard
+defaults write com.apple.dashboard mcx-disabled -bool true
+
+# Don’t show Dashboard as a Space
+defaults write com.apple.dock dashboard-in-overlay -bool true
+
+# Don’t automatically rearrange Spaces based on most recent use
+defaults write com.apple.dock mru-spaces -bool false
+
+# Hide Spotlight tray-icon (and subsequent helper)
+sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+
+# Allow installing user scripts via GitHub Gist or Userscripts.org
+defaults write com.google.Chrome ExtensionInstallSources -array "https://gist.githubusercontent.com/" "http://userscripts.org/*"
+defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://gist.githubusercontent.com/" "http://userscripts.org/*"
+
+
+echo "==================================================\n"
+echo "    All done!\n"
+echo "    Delete setup-folder, reboot and enjoy!\n"
+echo "==================================================\n"
