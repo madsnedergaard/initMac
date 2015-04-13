@@ -85,6 +85,20 @@ No guide yet.
 
 ---
 
+## Todo/Roadmap
+
+- Fix ZPrezto
+- Fix dotVhosts
+- Fix NPM Install (evt. bare npm install -g bower grunt-cli yo jshint browsersync)
+- Fix brew install cask
+- Fix clean-dock
+
+Osx-hacks not working:
+- FK_StandardViewSettings:IconViewSettings:showItemInfo
+- FK_StandardViewSettings:IconViewSettings:arrangeBy
+
+---
+
 ## Acknowledgements
 
 Code and inspiration from:
