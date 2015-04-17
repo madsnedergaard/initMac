@@ -79,9 +79,46 @@ Automated installation of:
 
 ## Step 2: Configure Apache & MySQL
 
-No guide yet.
+### Apache
+
+**Changes in httpd.conf (/etc/apache2)**
+
+The following lines should be enabled:
+```
+LoadModule userdir_module libexec/apache2/mod_userdir.so (l166)
+LoadModule php5_module libexec/apache2/libphp5.so (l169)
+Include /private/etc/apache2/extra/httpd-userdir.conf (l495)
+Include /private/etc/apache2/extra/httpd-vhosts.conf (l500)
+```
+
+Documentroot can be changed to ~/Sites (if wanted):
+```
+DocumentRoot "/Users/YOURUSERNAME/Sites"
+<Directory "/Users/YOURUSERNAME/Sites">
+```
+
+**Changes in YOURUSERNAME.conf (/etc/apache2/users)**
+
+Your personal conf-file should look like this:
+```
+<Directory "/Users/madsnedergaard/Sites/">
+    Options Indexes MultiViews
+    AllowOverride None
+    Order allow,deny
+    Allow from localhost
+    Require all granted
+</Directory>
+```
+
+Now, restart apache in terminal:
+```sudo apachectl restart```
+
+_If you still have issues, then hit me up and we will work it out together!_
 
 
+### Mysql
+
+No guide yet...
 
 ---
 
