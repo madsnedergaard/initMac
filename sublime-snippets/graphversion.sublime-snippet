@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[if(\$nbapp->graphversion == '2.0') {
+	$1
+} else {
+    $2
+}]]></content>
+    <tabTrigger>gv</tabTrigger>
+    <scope>source.php</scope>
+</snippet>

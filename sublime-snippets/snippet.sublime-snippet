@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[<snippet>
+  	<content>
+   		<![CDATA[$2]]${1:>}
+   	</content>
+   	<tabTrigger>$3</tabTrigger>
+   	<scope>$4</scope>
+</snippet>]]></content>
+    <tabTrigger>snippet</tabTrigger>
+</snippet>
