@@ -27,12 +27,22 @@ alias gpfm="git push fortrabbit master"
 
 ## Random Stuff
 ########
-alias ffs="sudo"
+
+# Sublime
 alias subl="sublime"
 alias sub="sublime"
+
 alias apache="sudo apachectl"
 
+alias fuck='$(thefuck $(fc -ln -1))'
+alias ffs=fuck
 
+# Httpd aliases
+alias httpdconf="sub /etc/apache2/httpd.conf"
+alias httpduser="sub /etc/apache2/users/madsnedergaard.conf"
+alias vhosts="sub /etc/apache2/extra/httpd-vhosts.conf"
+alias writevhost="sh ~/Sites/.vhosts/writevhost.sh"
+alias wh=writevhost
 ## Lists
 ########
 
