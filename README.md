@@ -118,7 +118,7 @@ _If you still have issues, then hit me up and we will work it out together!_
 
 ### Mysql
 
-No guide yet...
+1. [Download](http://dev.mysql.com/downloads/mysql/) latest version
 
 ---
 
