@@ -130,8 +130,10 @@ _If you still have issues, then hit me up and we will work it out together!_
 - Day One
 - GifGrapper
 - iA Writer Pro
+- Lightroom
 - OmmWriter
 - Paw
+- Photoshop
 - Sketch
 - Skype Call Recorder
 - TeamViewer
