@@ -73,6 +73,7 @@ Automated installation of:
 	- the-unarchiver
 	- virtualbox
 	- vlc
+	- wunderlist
 - Optionals
 	- A cleaned dock (removes all icons)
 
@@ -121,15 +122,10 @@ _If you still have issues, then hit me up and we will work it out together!_
 1. [Download](http://dev.mysql.com/downloads/mysql/) latest version
 2. [Enable Auto-start](http://stackoverflow.com/a/26465743)
 
+
 ---
 
-## Todo/Roadmap
-
-- Fix ZPrezto
-- Fix dotVhosts
-- Fix NPM Install (evt. bare npm install -g bower grunt-cli yo jshint browsersync)
-- Fix brew install cask
-- Fix clean-dock
+## Roadmap
 
 Osx-hacks not working:
 - FK_StandardViewSettings:IconViewSettings:showItemInfo
