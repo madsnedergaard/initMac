@@ -1,6 +1,6 @@
 # Clean Dev Machine
 
-Personal dotfiles and setup on new machines.
+My personal dotfiles and setup on new machines.
 
 
 ## Step 1: Init machine
