@@ -122,6 +122,20 @@ _If you still have issues, then hit me up and we will work it out together!_
 1. [Download](http://dev.mysql.com/downloads/mysql/) latest version
 2. [Enable Auto-start](http://stackoverflow.com/a/26465743)
 
+---
+
+## Paid applications to buy or reinstall
+- Airmail
+- DaisyDisk
+- Day One
+- GifGrapper
+- iA Writer Pro
+- OmmWriter
+- Paw
+- Sketch
+- Skype Call Recorder
+- TeamViewer
+- uTorrent
 
 ---
 
