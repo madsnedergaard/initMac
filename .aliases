@@ -2,12 +2,25 @@
 ########
 
 alias sites="cd ~/sites"
+alias s="cd ~/sites"
+
 alias home="cd ~/"
 alias h="home"
-alias s="cd ~/sites"
+
 alias netbooster="cd ~/sites/netbooster"
+alias nb=netbooster
+
 alias freelance="cd ~/sites/freelance"
+alias free=freelance
+
 alias personal="cd ~/sites/personal"
+alias per=personal
+
+alias portfolio="cd ~/sites/personal/madsnedergaard.dk/portfolio"
+alias pf=portfolio
+alias pfpush="grunt build && cd dist && ga . && gm 'update' && gpom && .."
+
+alias wpdev="cd ~/sites/personal/wp/www/"
 
 alias cd..="cd .."
 alias ..="cd .."
@@ -25,15 +38,17 @@ alias gpom="git push origin master"
 alias gpbm="git push bitbucket master"
 alias gpfm="git push fortrabbit master"
 
-## Random Stuff
+## Application Aliases
 ########
 
 # Sublime
 alias subl="sublime"
 alias sub="sublime"
 
+# Apache
 alias apache="sudo apachectl"
 
+# TheFuck
 alias fuck='$(thefuck $(fc -ln -1))'
 alias ffs=fuck
 
@@ -41,8 +56,30 @@ alias ffs=fuck
 alias httpdconf="sub /etc/apache2/httpd.conf"
 alias httpduser="sub /etc/apache2/users/madsnedergaard.conf"
 alias vhosts="sub /etc/apache2/extra/httpd-vhosts.conf"
+alias hosts="sub /etc/hosts"
 alias writevhost="sh ~/Sites/.vhosts/writevhost.sh"
 alias wh=writevhost
+
+# MySQL
+alias mysql=/usr/local/mysql/bin/mysql
+alias mysqladmin=/usr/local/mysql/bin/mysqladmin
+
+## Ruby Gems
+########
+# Jekyll
+#alias jekyll=~/.rbenv/versions/2.2.1/bin/jekyll
+
+
+## Mixed
+########
+
+alias ananas="ssh root@192.168.1.100 -p 222"
+alias raspi="ssh root@192.168.1.200"
+alias writealias="sub ~/.aliases"
+
+
+
+
 ## Lists
 ########
 
@@ -71,8 +108,3 @@ alias spoton="sudo mdutil -a -i on"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
-
-
-# Hide/show all desktop icons (useful when presenting)
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
