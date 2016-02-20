@@ -119,6 +119,7 @@ _If you still have issues, then hit me up and we will work it out together!_
 ### Mysql
 
 1. [Download](http://dev.mysql.com/downloads/mysql/) latest version
+2. [Enable Auto-start](http://stackoverflow.com/a/26465743)
 
 ---
 
