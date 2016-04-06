@@ -46,6 +46,7 @@ Automated installation of:
 - Git configuration
 - OSX Hacks ([laptop.local #L152](https://github.com/madsnedergaard/cleandevmachine/blob/master/laptop.local#L152))
 - Python and pip
+- PHPSwitcher (and PHP5.5 + 5.6)
 - Zprezto
 - Global Nodejs Packages
 	- Bower
@@ -58,7 +59,6 @@ Automated installation of:
 	- filezilla
 	- firefox
 	- flash
-	- flux
 	- google-chrome
 	- iterm2
 	- sequel-pro
@@ -67,7 +67,6 @@ Automated installation of:
 	- slack
 	- sourcetree
 	- spotify
-	- spotifree
 	- spotify-notifications
 	- sublime-text
 	- the-unarchiver
@@ -112,7 +111,9 @@ Your personal conf-file should look like this:
 ```
 
 Now, restart apache in terminal:
-```sudo apachectl restart```
+```
+sudo apachectl restart
+```
 
 _If you still have issues, then hit me up and we will work it out together!_
 
@@ -139,6 +140,9 @@ _If you still have issues, then hit me up and we will work it out together!_
 - TeamViewer
 - uTorrent
 
+## Other necessary steps
+- Get SSH-keys from backup location
+- [Typicode/Hotel](https://github.com/typicode/hotel)
 ---
 
 ## Roadmap

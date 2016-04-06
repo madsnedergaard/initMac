@@ -1,7 +1,7 @@
 # Getting applications
 ######################
 
-for cask in alfred dropbox filezilla firefox flash flux google-chrome iterm2 sequel-pro skype slack sourcetree spotify spotify-notifications sublime-text the-unarchiver virtualbox vlc wunderlist; do
+for cask in alfred dropbox filezilla firefox flash google-chrome iterm2 sequel-pro skype slack sourcetree spotify spotify-notifications sublime-text the-unarchiver virtualbox vlc wunderlist; do
 	if ! cask_installed $cask; then
 		brew cask install $cask
 	fi
@@ -78,7 +78,7 @@ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/loca
 
 # DotVhosts
 #################
-git clone git@github.com:madsnedergaard/dotVhosts.git ~/vhosts
+# git clone git@github.com:madsnedergaard/dotVhosts.git ~/vhosts
 
 
 # Zprezto
@@ -93,7 +93,7 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 
 
-# Global Node Packages (yo grunt)
+# Global Node Packages 
 ######################
 
 
@@ -124,9 +124,7 @@ done
         # List of npm packages
         desired_packages=(
             "bower"
-            "grunt-cli"
             "jshint"
-            "yo"
         )
 
         for i in $desired_packages; do
@@ -232,7 +230,7 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 defaults write com.apple.dock mru-spaces -bool false
 
 # Hide Spotlight tray-icon (and subsequent helper)
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+#sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 
 # Allow installing user scripts via GitHub Gist or Userscripts.org
 defaults write com.google.Chrome ExtensionInstallSources -array "https://gist.githubusercontent.com/" "http://userscripts.org/*"
