@@ -142,7 +142,9 @@ _If you still have issues, then hit me up and we will work it out together!_
 
 ## Other necessary steps
 - Get SSH-keys from backup location
+- Get Alfred.alfredpreferences from backup location
 - [Typicode/Hotel](https://github.com/typicode/hotel)
+
 ---
 
 ## Roadmap
