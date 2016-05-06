@@ -149,6 +149,8 @@ _If you still have issues, then hit me up and we will work it out together!_
 
 ## Roadmap
 
+Deviate from Thoughtbot - grab relevant stuff, but providing the entire setup myself would ensure full customizability.
+
 Osx-hacks not working:
 - FK_StandardViewSettings:IconViewSettings:showItemInfo
 - FK_StandardViewSettings:IconViewSettings:arrangeBy
