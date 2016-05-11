@@ -149,9 +149,13 @@ _If you still have issues, then hit me up and we will work it out together!_
 
 ## Roadmap
 
-Osx-hacks not working:
-- FK_StandardViewSettings:IconViewSettings:showItemInfo
-- FK_StandardViewSettings:IconViewSettings:arrangeBy
+- Deviate from Thoughtbot - grab relevant stuff, but providing the entire setup myself would ensure full customizability.
+- Ensure that Homebrew installs or symlinks to correct Applications folder.
+- Add NVM and download a few global modules
+- Setup folder structure?
+- Osx-hacks not working:
+	- FK_StandardViewSettings:IconViewSettings:showItemInfo
+	- FK_StandardViewSettings:IconViewSettings:arrangeBy
 
 ---
 
