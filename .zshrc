@@ -1,7 +1,6 @@
-# My Custom Bash Scripts
-
 # Aliases
 source .aliases
+source .personal-aliases
 
 # Functions
 source .functions

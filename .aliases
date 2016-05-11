@@ -3,33 +3,10 @@
 
 # General
 alias sites="cd ~/sites"
-alias s="cd ~/sites"
+alias s="sites"
 
 alias home="cd ~/"
 alias h="home"
-
-
-# NetBooster
-alias netbooster="cd ~/sites/netbooster"
-alias nb=netbooster
-alias cuin="cd ~/sites/netbooster/customer-interface-modules/competition"
-alias cuin-go="cd ~/sites/netbooster/customer-interface-modules/competition && npm run watch-dev-server"
-
-# ITU related
-alias itu="cd ~/sites/itu"
-alias wepair="cd ~/sites/itu/wepair/code"
-
-# Personal
-alias freelance="cd ~/sites/freelance"
-alias free=freelance
-alias personal="cd ~/sites/personal"
-alias per=personal
-alias play="cd ~/sites/play"
-alias portfolio="cd ~/sites/personal/madsnedergaard.dk/portfolio"
-alias pf=portfolio
-alias pfpush="grunt build && cd dist && ga . && gm 'update' && gpom && .."
-alias wpdev="cd ~/sites/personal/wp/www/"
-
 
 alias cd..="cd .."
 alias ..="cd .."
@@ -63,7 +40,6 @@ alias ffs=fuck
 
 # Httpd aliases
 alias httpdconf="sub /etc/apache2/httpd.conf"
-alias httpduser="sub /etc/apache2/users/madsnedergaard.conf"
 alias vhosts="sub /etc/apache2/extra/httpd-vhosts.conf"
 alias hosts="sub /etc/hosts"
 
@@ -71,15 +47,9 @@ alias hosts="sub /etc/hosts"
 alias mysql=/usr/local/mysql/bin/mysql
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 
-## Ruby Gems
-########
-# Jekyll
-#alias jekyll=~/.rbenv/versions/2.2.1/bin/jekyll
-
 
 ## Mixed
 ########
-
 alias dockrefresh="killall -KILL Dock"
 
 ## Write Stuff
