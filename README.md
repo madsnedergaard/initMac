@@ -128,13 +128,6 @@ brew install mackup
 mackup restore
 ```
 
-
-## Step 3: Restore application settings
-
-### Mackup
-1. `brew install mackup`
-2. `mackup restore`
-
 ---
 
 ## Paid applications to buy or reinstall
