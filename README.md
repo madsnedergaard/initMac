@@ -20,7 +20,6 @@ Automated installation of:
 - postgres
 - postgresql
 - redis
-- redis
 - the_silver_searcher
 - vim
 - ctags
@@ -60,7 +59,7 @@ Automated installation of:
 	- firefox
 	- flash
 	- google-chrome
-	- iterm2
+	- iterm2 + Profile
 	- sequel-pro
 	- shiftit
 	- skype
@@ -75,7 +74,6 @@ Automated installation of:
 	- wunderlist
 - Optionals
 	- A cleaned dock (removes all icons)
-
 
 ## Step 2: Configure Apache & MySQL
 
@@ -122,6 +120,20 @@ _If you still have issues, then hit me up and we will work it out together!_
 
 1. [Download](http://dev.mysql.com/downloads/mysql/) latest version
 2. [Enable Auto-start](http://stackoverflow.com/a/26465743)
+
+## (Optional) Step 3: Fetch app settings from backup
+If using [Mackup](https://github.com/lra/mackup), run the following to fetch application settings from backup. Dropbox must be synced before use!
+```
+brew install mackup
+mackup restore
+```
+
+
+## Step 3: Restore application settings
+
+### Mackup
+1. `brew install mackup`
+2. `mackup restore`
 
 ---
 
