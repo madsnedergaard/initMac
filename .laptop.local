@@ -13,9 +13,9 @@ brew cask cleanup
 # Brew Stuff
 ############
 
-brew_install_or_upgrade 'php55'
-brew_install_or_upgrade 'php56'
-brew_install_or_upgrade 'brew-php-switcher'
+brew install 'php55'
+brew install 'php56'
+brew install 'brew-php-switcher'
 
 
 
