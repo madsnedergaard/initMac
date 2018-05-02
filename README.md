@@ -77,7 +77,9 @@ Automated installation of:
 - [Follow this guide](https://getgrav.org/blog/macos-sierra-apache-multiple-php-versions)
 - Copy over vhosts from backup
 - Copy over hosts from backup
-
+- Install Memcached for **each** PHP version installed:
+  - If PECL works, then just pecl install memcached
+  - If not, use offline install: `pecl install ~/cleandevmachine/memcached-3.0.4.tgz`
 
 Restart apache in terminal:
 ```
@@ -89,6 +91,7 @@ apache restart
 
 **PHP Exec cannot find mysql:**
 > Fix: add the following path to .zshrc: `export PATH="$PATH:/usr/local/mysql/bin"`
+
 
 
 _If you still have issues, then hit me up and we will work it out together!_
