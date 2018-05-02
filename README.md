@@ -76,11 +76,20 @@ Automated installation of:
 - Create ~/Sites folder
 - [Follow this guide](https://getgrav.org/blog/macos-sierra-apache-multiple-php-versions)
 - Copy over vhosts from backup
+- Copy over hosts from backup
+
 
 Restart apache in terminal:
 ```
 apache restart
 ```
+
+
+#### Known issues
+
+**PHP Exec cannot find mysql:**
+> Fix: add the following path to .zshrc: `export PATH="$PATH:/usr/local/mysql/bin"`
+
 
 _If you still have issues, then hit me up and we will work it out together!_
 
