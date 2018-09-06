@@ -2,7 +2,6 @@
 
 My personal dotfiles and setup on new machines.
 
-
 ## Step 1: Init machine
 
 1. Download this repo to $HOME (~/)
@@ -58,8 +57,6 @@ Automated installation of:
 	- slack
 	- sourcetree
 	- spotify
-	- spotify-notifications
-	- sublime-text
 	- the-unarchiver
 	- virtualbox
 	- vlc
@@ -109,23 +106,41 @@ mackup restore
 1. Generate new key: `ssh-keygen`
 2. Add keygen to relevant sites (e.g. Github, Bitbucket, any hosting)
 
+
+### Lolcommits
+
+- [lolcommits](https://github.com/mroth/lolcommits) 4 the lulz
+
 ---
 
 ## Other applications to buy or reinstall
+
+- Bartender
+- BetterTouchTool
+- Boom Audio
 - DaisyDisk
-- Day One
-- GifGrapper
-- iA Writer Pro
+- Giphy
 - Lightroom
 - Paw
 - Photoshop
 - Sketch
+- Standing Desk App
 - TeamViewer
 - TresorIT
+- Timely (if time tracking is required)
+- VS Code + Settings Sync from Github gists
 
 ## Other necessary steps
+
 - Get Alfred.alfredpreferences from backup location
-- [Typicode/Hotel](https://github.com/typicode/hotel)
+
+## System preferences
+
+*In Apple Icon > System Preferences:*
+
+- Trackpad > Tap to click
+- Keyboard > Key Repeat > Fast (all the way to the right)
+- Keyboard > Delay Until Repeat > Short (all the way to the right)
 
 ---
 
