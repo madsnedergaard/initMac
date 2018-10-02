@@ -46,6 +46,7 @@ Automated installation of:
 - Zprezto
 - Apps
 	- alfred
+	- diffmerge
 	- dropbox
 	- filezilla
 	- firefox
@@ -117,18 +118,28 @@ mackup restore
 
 - Bartender
 - BetterTouchTool
+- BombSquad
 - Boom Audio
+- Calibre
 - DaisyDisk
+- Docker Shot (keep Mac awake)
+- Double
+- FontPlop
 - Giphy
+- Hyper
 - Lightroom
+- MS Office package
 - Paw
 - Photoshop
 - Sketch
+- ShiftIt
 - Standing Desk App
 - TeamViewer
+- Transmit
 - TresorIT
 - Timely (if time tracking is required)
 - VS Code + Settings Sync from Github gists
+- Zoom
 
 ## Other necessary steps
 
