@@ -1,0 +1,292 @@
+[
+    {
+      "metadata": {
+        "id": "6e440e71-8ed9-4f25-bb78-4b13096b8a03",
+        "publisherId": "formulahendry.auto-rename-tag",
+        "publisherDisplayName": "formulahendry"
+      },
+      "name": "auto-rename-tag",
+      "publisher": "formulahendry",
+      "version": "0.0.15"
+    },
+    {
+      "metadata": {
+        "id": "f583eafd-aa0d-4ccb-8f44-d1e610389660",
+        "publisherId": "CoenraadS.bracket-pair-colorizer",
+        "publisherDisplayName": "CoenraadS"
+      },
+      "name": "bracket-pair-colorizer",
+      "publisher": "CoenraadS",
+      "version": "1.0.60"
+    },
+    {
+      "metadata": {
+        "id": "a6a0c5b2-d078-4bf5-a9ee-4e37054414b3",
+        "publisherId": "formulahendry.code-runner",
+        "publisherDisplayName": "formulahendry"
+      },
+      "name": "code-runner",
+      "publisher": "formulahendry",
+      "version": "0.9.4"
+    },
+    {
+      "metadata": {
+        "id": "e337c67b-55c2-4fef-8949-eb260e7fb7fd",
+        "publisherId": "Shan.code-settings-sync",
+        "publisherDisplayName": "Shan"
+      },
+      "name": "code-settings-sync",
+      "publisher": "Shan",
+      "version": "3.1.2"
+    },
+    {
+      "metadata": {
+        "id": "121396ad-85a1-45ec-9fd1-d95028a847f5",
+        "publisherId": "naumovs.color-highlight",
+        "publisherDisplayName": "naumovs"
+      },
+      "name": "color-highlight",
+      "publisher": "naumovs",
+      "version": "2.3.0"
+    },
+    {
+      "metadata": {
+        "id": "90a838c3-675b-4b87-b7a5-75ea88432cce",
+        "publisherId": "joelday.docthis",
+        "publisherDisplayName": "joelday"
+      },
+      "name": "docthis",
+      "publisher": "joelday",
+      "version": "0.7.1"
+    },
+    {
+      "metadata": {
+        "id": "f60a60a6-95ba-42d4-b41c-3d24c1b89588",
+        "publisherId": "EditorConfig.EditorConfig",
+        "publisherDisplayName": "EditorConfig"
+      },
+      "name": "EditorConfig",
+      "publisher": "EditorConfig",
+      "version": "0.12.4"
+    },
+    {
+      "metadata": {
+        "id": "1b625615-bded-4797-9806-079abcacfcc1",
+        "publisherId": "letrieu.expand-region",
+        "publisherDisplayName": "letrieu"
+      },
+      "name": "expand-region",
+      "publisher": "letrieu",
+      "version": "0.1.2"
+    },
+    {
+      "metadata": {
+        "id": "b3917e4f-5086-4def-a82b-2ae6b708db16",
+        "publisherId": "flowtype.flow-for-vscode",
+        "publisherDisplayName": "flowtype"
+      },
+      "name": "flow-for-vscode",
+      "publisher": "flowtype",
+      "version": "0.8.4"
+    },
+    {
+      "metadata": {
+        "id": "4de763bd-505d-4978-9575-2b7696ecf94e",
+        "publisherId": "eamodio.gitlens",
+        "publisherDisplayName": "eamodio"
+      },
+      "name": "gitlens",
+      "publisher": "eamodio",
+      "version": "8.5.6"
+    },
+    {
+      "metadata": {
+        "id": "0ec558c9-f7f7-4df3-b2cf-a41ddcf292dd",
+        "publisherId": "mkaufman.HTMLHint",
+        "publisherDisplayName": "mkaufman"
+      },
+      "name": "HTMLHint",
+      "publisher": "mkaufman",
+      "version": "0.5.0"
+    },
+    {
+      "metadata": {
+        "id": "a2cec723-5349-460d-9de9-0fd1f8d3456f",
+        "publisherId": "xabikos.JavaScriptSnippets",
+        "publisherDisplayName": "xabikos"
+      },
+      "name": "JavaScriptSnippets",
+      "publisher": "xabikos",
+      "version": "1.7.1"
+    },
+    {
+      "metadata": {
+        "id": "99c12a52-ff68-4e9d-a975-a67556fee2f5",
+        "publisherId": "donjayamanne.jquerysnippets",
+        "publisherDisplayName": "donjayamanne"
+      },
+      "name": "jquerysnippets",
+      "publisher": "donjayamanne",
+      "version": "0.0.1"
+    },
+    {
+      "metadata": {
+        "id": "98790d67-10fa-497c-9113-f6c7489207b2",
+        "publisherId": "yzhang.markdown-all-in-one",
+        "publisherDisplayName": "yzhang"
+      },
+      "name": "markdown-all-in-one",
+      "publisher": "yzhang",
+      "version": "1.6.2"
+    },
+    {
+      "metadata": {
+        "id": "26a529c9-2654-4b95-a63f-02f6a52429e6",
+        "publisherId": "zhuangtongfa.Material-theme",
+        "publisherDisplayName": "zhuangtongfa"
+      },
+      "name": "Material-theme",
+      "publisher": "zhuangtongfa",
+      "version": "2.17.3"
+    },
+    {
+      "metadata": {
+        "id": "4bf45e86-a448-4531-8c01-ef33f4536306",
+        "publisherId": "ms-mssql.mssql",
+        "publisherDisplayName": "ms-mssql"
+      },
+      "name": "mssql",
+      "publisher": "ms-mssql",
+      "version": "1.4.0"
+    },
+    {
+      "metadata": {
+        "id": "ca0094fa-0dc7-4847-ae5d-879442c099ca",
+        "publisherId": "neilbrayfield.php-docblocker",
+        "publisherDisplayName": "neilbrayfield"
+      },
+      "name": "php-docblocker",
+      "publisher": "neilbrayfield",
+      "version": "1.6.0"
+    },
+    {
+      "metadata": {
+        "id": "b0a47156-9132-49a2-bebd-ed16d91b1fa6",
+        "publisherId": "ikappas.phpcs",
+        "publisherDisplayName": "ikappas"
+      },
+      "name": "phpcs",
+      "publisher": "ikappas",
+      "version": "1.0.5"
+    },
+    {
+      "metadata": {
+        "id": "f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5",
+        "publisherId": "ms-python.python",
+        "publisherDisplayName": "ms-python"
+      },
+      "name": "python",
+      "publisher": "ms-python",
+      "version": "2018.9.0"
+    },
+    {
+      "metadata": {
+        "id": "c807e072-5951-4a01-9542-450f946c7ec1",
+        "publisherId": "xabikos.ReactSnippets",
+        "publisherDisplayName": "xabikos"
+      },
+      "name": "ReactSnippets",
+      "publisher": "xabikos",
+      "version": "2.2.1"
+    },
+    {
+      "metadata": {
+        "id": "529697b9-b343-4b1c-ba2f-f5ef692132d4",
+        "publisherId": "ms-vscode.sublime-keybindings",
+        "publisherDisplayName": "ms-vscode"
+      },
+      "name": "sublime-keybindings",
+      "publisher": "ms-vscode",
+      "version": "4.0.0"
+    },
+    {
+      "metadata": {
+        "id": "3324c5be-43aa-4c39-a0f8-d94c2978804f",
+        "publisherId": "whatwedo.twig",
+        "publisherDisplayName": "whatwedo"
+      },
+      "name": "twig",
+      "publisher": "whatwedo",
+      "version": "1.0.2"
+    },
+    {
+      "metadata": {
+        "id": "d7b592dd-41c9-4f2b-acf3-055ae65e55c6",
+        "publisherId": "dzannotti.vscode-babel-coloring",
+        "publisherDisplayName": "dzannotti"
+      },
+      "name": "vscode-babel-coloring",
+      "publisher": "dzannotti",
+      "version": "0.0.4"
+    },
+    {
+      "metadata": {
+        "id": "583b2b34-2c1e-4634-8c0b-0b82e283ea3a",
+        "publisherId": "dbaeumer.vscode-eslint",
+        "publisherDisplayName": "dbaeumer"
+      },
+      "name": "vscode-eslint",
+      "publisher": "dbaeumer",
+      "version": "1.6.0"
+    },
+    {
+      "metadata": {
+        "id": "d637104e-1fd7-4063-98fc-8afe46012c9b",
+        "publisherId": "sleistner.vscode-fileutils",
+        "publisherDisplayName": "sleistner"
+      },
+      "name": "vscode-fileutils",
+      "publisher": "sleistner",
+      "version": "2.11.0"
+    },
+    {
+      "metadata": {
+        "id": "daf8b44d-8aae-4da2-80c5-1f770219f643",
+        "publisherId": "DavidAnson.vscode-markdownlint",
+        "publisherDisplayName": "DavidAnson"
+      },
+      "name": "vscode-markdownlint",
+      "publisher": "DavidAnson",
+      "version": "0.20.0"
+    },
+    {
+      "metadata": {
+        "id": "06cc3e44-aedb-41b8-a4ea-29ebf3c491fd",
+        "publisherId": "jpoissonnier.vscode-styled-components",
+        "publisherDisplayName": "jpoissonnier"
+      },
+      "name": "vscode-styled-components",
+      "publisher": "jpoissonnier",
+      "version": "0.0.22"
+    },
+    {
+      "metadata": {
+        "id": "93642b4f-5149-4f0b-be9f-eaa0a554e03e",
+        "publisherId": "jkjustjoshing.vscode-text-pastry",
+        "publisherDisplayName": "jkjustjoshing"
+      },
+      "name": "vscode-text-pastry",
+      "publisher": "jkjustjoshing",
+      "version": "1.2.0"
+    },
+    {
+      "metadata": {
+        "id": "2061917f-f76a-458a-8da9-f162de22b97e",
+        "publisherId": "redhat.vscode-yaml",
+        "publisherDisplayName": "redhat"
+      },
+      "name": "vscode-yaml",
+      "publisher": "redhat",
+      "version": "0.0.17"
+    }
+  ]
