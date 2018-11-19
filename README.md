@@ -133,7 +133,7 @@ mackup restore
 - Photoshop
 - Sketch
 - ShiftIt
-- Standing Desk App
+- [Standing Desk App](http://sda.codana.me/)
 - TeamViewer
 - Transmit
 - TresorIT
