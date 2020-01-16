@@ -1,6 +1,6 @@
-# Clean Dev Machine
+# madsnedergaard/init
 
-My personal dotfiles and setup on new machines.
+My personal guides on setting up new machines
 
 ## Guides
 
