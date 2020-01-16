@@ -1,5 +1,0 @@
-<snippet>
-<content>
-<![CDATA[  ->setCellValue('$1', '$2')]]>
-</content>
-<tabTrigger>cv</tabTrigger><scope>source.php</scope></snippet>

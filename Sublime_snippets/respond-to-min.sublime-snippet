@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[@include respond-to-min($1) {
-  $2
-}]]></content>
-    <tabTrigger>rtm</tabTrigger>
-    <scope>source.scss</scope>
-</snippet>
