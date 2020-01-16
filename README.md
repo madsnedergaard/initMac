@@ -5,7 +5,7 @@ My personal dotfiles and setup on new machines.
 ## Guides
 
 1. [init guide](setup.md)
-2. [system preferences](sys_pref.md)
+2. [system preferences](sys_prefs.md)
 
 ---
 
