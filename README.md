@@ -1,4 +1,4 @@
-# madsnedergaard/init
+# init - clean dev machine
 
 My personal guides on setting up new machines
 
