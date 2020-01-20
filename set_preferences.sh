@@ -43,6 +43,9 @@ mkdir -p ~/sites/play
 ## FINDER ##
 ############
 
+# Show The Library Folder
+chflags nohidden ~/Library
+
 # Show the home folder instead of all files when opening a new finder window
 defaults write com.apple.finder NewWindowTarget PfHm
 
