@@ -4,6 +4,13 @@
 ## GENERAL ##
 #############
 
+# Git setup
+git config --global user.email "nedergaardmads@gmail.com"
+git config --global user.name "Mads Nedergaard"
+git config --global alias.recent 'for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"'
+git config --global alias.stats 'shortlog -sn --all --no-merges'
+git config --global alias.today 'log --since=midnight --author="Mads Nedergaard" --oneline'
+
 # Keyboard: Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
 
