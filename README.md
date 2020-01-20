@@ -2,7 +2,7 @@
   <img width="437" height="205" src="logo.svg">
 </p>
 
-My personal guides on setting up new machines
+> My personal guide for setting up new machines.
 
 ## Getting Started
 
