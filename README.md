@@ -1,4 +1,6 @@
-![init](logo.svg)
+<p align="center">
+  <img width="437" height="205" src="logo.svg">
+</p>
 
 My personal guides on setting up new machines
 
