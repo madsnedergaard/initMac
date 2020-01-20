@@ -1,10 +1,6 @@
 # First Steps
 
-## Step 1: System preferences
-
-Run the script: `sh set_preferences.sh`
-
-## Step 2: Install basic utils
+## Step 1: Install basic utils
 
 - Chrome
 - [HyperJS](https://hyper.is/)
@@ -12,7 +8,7 @@ Run the script: `sh set_preferences.sh`
 - Xcode Developer Tools (try running `git --version` and it should show, otherwise: `xcode-select --install`)
 - `brew install cask`
 
-## Step 3: Fetch app settings from backup
+## Step 2: Fetch app settings from backup
 
 If using [Mackup](https://github.com/lra/mackup), run the following to fetch application settings from backup. Dropbox must be synced before use!
 
@@ -27,7 +23,7 @@ brew install mackup
 mackup restore
 ```
 
-## Step 4: Install additional stuff
+## Step 3: Install additional stuff
 
 - `brew install node ruby yarn docker typescript zsh-syntax-highlighting`
 - fonts from NAS/backup
@@ -37,7 +33,7 @@ mackup restore
 - Quick look plugins [github.com/sindresorhus/quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins)
 - Stopwatch (`cp stopwatch.sh /usr/local/bin/sw`)
 
-## Step 5: Other applications to buy or reinstall
+## Step 4: Other applications to buy or reinstall
 
 ### From App Store
 
