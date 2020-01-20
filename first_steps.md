@@ -1,6 +1,6 @@
-# Init
+# First Steps
 
-## Step 1: Foundation
+## Step 1: The Foundation
 
 ### Wipe the Dock
 
@@ -10,13 +10,11 @@ defaults write com.apple.dock persistent-apps -array && killall -KILL Dock
 
 ### Install basic utils
 
-- chrome
+- Chrome
 - [HyperJS](https://hyper.is/)
-- Homebrew & cask [guide](https://brew.sh/)
+- [Homebrew](https://brew.sh/)
 - Xcode Developer Tools (try running `git --version` and it should show, otherwise: `xcode-select --install`)
-- node [guide](https://nodejs.org/en/)
-- ruby, yarn (`brew install ruby yarn`)
-- yarn (`brew install yarn`)
+- `brew install cask`
 
 ## Step 2: Fetch app settings from backup
 
@@ -35,12 +33,13 @@ mackup restore
 
 ## Step 3: Install additional stuff
 
+- `brew install node ruby yarn docker zsh-syntax-highlighting`
 - fonts from NAS/backup
 - BetterTouchTool from NAS/backup
 - VSCode and init settings-sync extension
 - Alfred & Alfred.alfredpreferences & workflows from backup (+ replace `cmd+space` with Alfred)
 - Quick look plugins [github.com/sindresorhus/quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins)
-- Stopwatch (`mv config/stopwatch.sh /usr/local/bin/sw`)
+- Stopwatch (`cp stopwatch.sh /usr/local/bin/sw`)
 
 ## Step 4: Other applications to buy or reinstall
 
@@ -51,7 +50,6 @@ mackup restore
 - Calibre
 - DaisyDisk
 - DiffMerge
-- Docker
 - Double Shot (keep Mac awake)
 - Dozer
 - Figma

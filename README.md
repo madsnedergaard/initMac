@@ -1,10 +1,10 @@
-# init - clean dev machine
+# initMac - clean dev machine
 
 My personal guides on setting up new machines
 
 ## Guides
 
-1. [init guide](setup.md)
+1. [First steps](first_steps.md)
 2. [system preferences](sys_prefs.md)
 
 ---
