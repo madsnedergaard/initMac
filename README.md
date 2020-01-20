@@ -34,7 +34,7 @@
 
 ### Timemachine exclusions
 
-![tm_settings.png](tm_settings.png)
+<img width="378" height="205" src="tm_settings.png">
 
 ---
 
