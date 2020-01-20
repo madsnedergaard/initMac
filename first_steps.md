@@ -1,14 +1,10 @@
 # First Steps
 
-## Step 1: The Foundation
+## Step 1: System preferences
 
-### Wipe the Dock
+Run the script: `sh set_preferences.sh`
 
-```bash
-defaults write com.apple.dock persistent-apps -array && killall -KILL Dock
-```
-
-### Install basic utils
+## Step 2: Install basic utils
 
 - Chrome
 - [HyperJS](https://hyper.is/)
@@ -16,7 +12,7 @@ defaults write com.apple.dock persistent-apps -array && killall -KILL Dock
 - Xcode Developer Tools (try running `git --version` and it should show, otherwise: `xcode-select --install`)
 - `brew install cask`
 
-## Step 2: Fetch app settings from backup
+## Step 3: Fetch app settings from backup
 
 If using [Mackup](https://github.com/lra/mackup), run the following to fetch application settings from backup. Dropbox must be synced before use!
 
@@ -31,9 +27,9 @@ brew install mackup
 mackup restore
 ```
 
-## Step 3: Install additional stuff
+## Step 4: Install additional stuff
 
-- `brew install node ruby yarn docker zsh-syntax-highlighting`
+- `brew install node ruby yarn docker typescript zsh-syntax-highlighting`
 - fonts from NAS/backup
 - BetterTouchTool from NAS/backup
 - VSCode and init settings-sync extension
@@ -41,12 +37,19 @@ mackup restore
 - Quick look plugins [github.com/sindresorhus/quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins)
 - Stopwatch (`cp stopwatch.sh /usr/local/bin/sw`)
 
-## Step 4: Other applications to buy or reinstall
+## Step 5: Other applications to buy or reinstall
+
+### From App Store
+
+- Bear
+- BombSquad
+- Spark
+- Pages, Numbers, Keynote
+
+### From the internet
 
 - 1password
-- Bear
 - BetterTouchTool
-- BombSquad
 - Calibre
 - DaisyDisk
 - DiffMerge

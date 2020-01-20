@@ -4,8 +4,7 @@ My personal guides on setting up new machines
 
 ## Guides
 
-1. [First steps](first_steps.md)
-2. [system preferences](sys_prefs.md)
+1. [Basic setup - first steps](first_steps.md)
 
 ---
 
@@ -28,10 +27,15 @@ My personal guides on setting up new machines
 - Slack `(#324050,#283542,#4b9ad9,#FFFFFF,#283542,#CFD8E5,#3bb594,#EB4D5C)`
 - Terminal: Use zsh and [pure prompt](https://github.com/sindresorhus/pure)
 
+## Timemachine exclusions
+
+![tm_settings.png](tm_settings.png)
+
 ---
 
 ## Inspiration
 
 - https://sourabhbajaj.com/mac-setup/
 - https://github.com/adamisntdead/DevMyMac
+- https://github.com/pshirshov/initmac
 - https://gist.github.com/kevinelliott/ab14cfb080cc85e0f8a415b147a0d895
