@@ -43,8 +43,8 @@ sudo nvram SystemAudioVolume=" "
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string 'This laptop belongs to Mads Nedergaard. If found, please call +45 50472150'
 
 # Create default website/code structure
-mkdir -p ~/sites/personal
-mkdir -p ~/sites/play
+mkdir -p ~/dev/personal
+mkdir -p ~/dev/play
 
 ############
 ## FINDER ##
