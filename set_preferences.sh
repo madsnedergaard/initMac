@@ -12,10 +12,10 @@ git config --global alias.stats 'shortlog -sn --all --no-merges'
 git config --global alias.today 'log --since=midnight --author="Mads Nedergaard" --oneline'
 
 # Keyboard: Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
+#defaults write NSGlobalDomain KeyRepeat -int 1
 
 # Keyboard: Set a shorter Delay until key repeat
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+#defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
@@ -57,7 +57,7 @@ chflags nohidden ~/Library
 defaults write com.apple.finder NewWindowTarget PfHm
 
 # Show all filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+#defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
@@ -121,8 +121,4 @@ killall -KILL Dock
 
 # Starts week on Monday
 defaults write com.apple.iCal "first day of week" -int 1
-
-# RESTARTS THE CALENDAR AFTER CHANGES
-killall Calendar>/dev/null || true
-
 
