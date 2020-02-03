@@ -29,7 +29,7 @@
 - [Alfred theme](https://www.alfredapp.com/extras/theme/yZODAdxN8T/) - [github repo](https://github.com/michelegera/alfred-snazzy)
 - VSCode should follow from settings-sync
 - [Hyper](https://github.com/sindresorhus/hyper-snazzy)
-- Slack `(#324050,#283542,#4b9ad9,#FFFFFF,#283542,#CFD8E5,#3bb594,#EB4D5C)`
+- Slack `#282A36,#324050,#324050,#57C7FF,#324050,#EFF0EB,#5AF78E,#FF5C57`
 - Terminal: Use zsh and [pure prompt](https://github.com/sindresorhus/pure)
 
 ### Timemachine exclusions
