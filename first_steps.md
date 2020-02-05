@@ -26,6 +26,7 @@ mackup restore
 ## Step 3: Install additional stuff
 
 - `brew install node ruby yarn docker typescript zsh-syntax-highlighting zsh-autosuggestions`
+- [Install zsh-z](https://github.com/agkozak/zsh-z)
 - fonts from NAS/backup
 - BetterTouchTool from NAS/backup
 - VSCode and init settings-sync extension
