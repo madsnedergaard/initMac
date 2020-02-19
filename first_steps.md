@@ -3,7 +3,6 @@
 ## Step 1: Install basic utils
 
 - Chrome
-- [HyperJS](https://hyper.is/)
 - [Homebrew](https://brew.sh/)
 - Xcode Developer Tools (try running `git --version` and it should show, otherwise: `xcode-select --install`)
 - `brew install cask`
@@ -25,12 +24,12 @@ mackup restore
 
 ## Step 3: Install additional stuff
 
-- `brew install node ruby yarn docker typescript zsh-syntax-highlighting zsh-autosuggestions`
+- `brew install node ruby yarn docker postgresql typescript zsh-syntax-highlighting zsh-autosuggestions`
 - [Install zsh-z](https://github.com/agkozak/zsh-z)
 - fonts from NAS/backup
 - BetterTouchTool from NAS/backup
-- VSCode and init settings-sync extension
-- Alfred & Alfred.alfredpreferences & workflows from backup (+ replace `cmd+space` with Alfred)
+- VSCode and add settings-sync extension
+- Alfred 3 & Alfred.alfredpreferences & workflows from backup (+ replace `cmd+space` with Alfred)
 - Quick look plugins [github.com/sindresorhus/quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins)
 - Stopwatch (`cp stopwatch.sh /usr/local/bin/sw`)
 
@@ -45,30 +44,25 @@ mackup restore
 
 ### From the internet
 
-- 1password
-- BetterTouchTool
-- Calibre
+```
+brew cask install hyper dozer spotify kap calibre slack sourcetree
+```
+
 - DaisyDisk
 - DiffMerge
 - Double Shot (keep Mac awake)
-- Dozer
 - Figma
 - FontPlop
-- Kap
 - Lightroom
 - MS Office package
 - Photoshop
 - Screaming From SEO Spider
 - Sketch
 - Skype
-- Slack
-- Sourcetree
-- Spotify
 - [Standing Desk App](http://sda.codana.me/)
 - Steam
 - TeamViewer
 - Timely (if time tracking is required)
 - Transmit
 - TresorIT
-- VS Code + Settings Sync from Github gists
 - Zoom
