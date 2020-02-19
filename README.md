@@ -20,9 +20,8 @@
 
 ### Postgres setup
 
-1. `brew upgrade postgresql`
-2. `brew postgresql-upgrade-database`
-3. `sudo pip install pipenv`
+1. `brew install postgresql`
+2. `brew services start postgres`
 
 ### Theming
 
