@@ -45,7 +45,7 @@ mackup restore
 ### From the internet
 
 ```
-brew cask install hyper dozer spotify kap calibre slack sourcetree
+brew cask install hyper dozer spotify kap calibre slack sourcetree tresorit
 ```
 
 - DaisyDisk
@@ -64,5 +64,4 @@ brew cask install hyper dozer spotify kap calibre slack sourcetree
 - TeamViewer
 - Timely (if time tracking is required)
 - Transmit
-- TresorIT
 - Zoom
