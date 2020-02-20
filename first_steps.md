@@ -31,6 +31,7 @@ mackup restore
 - VSCode and add settings-sync extension
 - Alfred 3 & Alfred.alfredpreferences & workflows from backup (+ replace `cmd+space` with Alfred)
 - Quick look plugins [github.com/sindresorhus/quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins)
+- [NVM](https://github.com/nvm-sh/nvm)
 - Stopwatch (`cp stopwatch.sh /usr/local/bin/sw`)
 
 ## Step 4: Other applications to buy or reinstall
