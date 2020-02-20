@@ -46,7 +46,7 @@ mackup restore
 ### From the internet
 
 ```
-brew cask install hyper dozer spotify kap calibre slack sourcetree tresorit
+brew cask install hyper dozer spotify kap calibre slack sourcetree tableplus tresorit
 ```
 
 - DaisyDisk
