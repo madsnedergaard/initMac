@@ -1,5 +1,7 @@
 #!/bin/bash -xe
 
+# inspiration: https://mths.be/macos
+
 #############
 ## GENERAL ##
 #############
@@ -18,13 +20,15 @@ git config --global alias.today 'log --since=midnight --author="Mads Nedergaard"
 #defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Trackpad: enable tap to click for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-# Disable smart quotes/smart dashes/autocorrection
+# Disable smart quotes/smart dashes/autocorrection/capitalization
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
 # Limit ad tracking
 defaults write com.apple.AdLib forceLimitAdTracking -bool true
@@ -41,6 +45,17 @@ sudo nvram SystemAudioVolume=" "
 
 # Set a custom text displayed on the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string 'This laptop belongs to Mads Nedergaard. If found, please call +45 50472150'
+
+# Enable "use keyboard navigation to move focus between controls"
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
+
+
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+# Disable the “Are you sure you want to open this application?” dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Create default website/code structure
 mkdir -p ~/dev/personal
@@ -65,8 +80,10 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-# Avoid creating .DS_Store files on network volumes
+# Avoid creating .DS_Store files on network or USB volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
 
 # Use list view in all Finder windows by default
 defaults write com.apple.finder FXPreferredSearchViewStyle -string "Nlsv"
@@ -122,3 +139,37 @@ killall -KILL Dock
 # Starts week on Monday
 defaults write com.apple.iCal "first day of week" -int 1
 
+
+######################
+## ACTIVITY MONITOR ##
+######################
+
+# Show the main window when launching Activity Monitor
+defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
+
+# Visualize CPU usage in the Activity Monitor Dock icon
+defaults write com.apple.ActivityMonitor IconType -int 5
+
+# Show all processes in Activity Monitor
+defaults write com.apple.ActivityMonitor ShowCategory -int 0
+
+# Sort Activity Monitor results by CPU usage
+defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
+defaults write com.apple.ActivityMonitor SortDirection -int 0
+
+
+#################
+## END MESSAGE ##
+#################
+
+echo "All Done! Note that some of these changes require a logout/restart to take effect."
+echo "---"
+printf "Manual changes required:
+- 'auto' appearance in 'general'
+- Computer name in 'sharing'
+- Spotlight exclusions: [dev, Dropdox, Downloads] in 'spotlight'
+- Add calendar accounts in 'internet accounts'
+- Add additional fingerprints in 'touch id'
+- Update profile picture and password in 'users & groups'
+- Time machine exclusions (see img in readme) to 'time machine'
+"
