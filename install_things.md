@@ -27,7 +27,7 @@ mackup restore
 - `brew install node ruby yarn docker postgresql typescript zsh-syntax-highlighting zsh-autosuggestions`
 - [Install zsh-z](https://github.com/agkozak/zsh-z)
 - fonts from NAS/backup
-- BetterTouchTool from NAS/backup
+- [BetterTouchTool](https://folivora.ai/) (find license in PW-manager)
 - VSCode and add settings-sync extension
 - Alfred 3 & Alfred.alfredpreferences & workflows from backup (+ replace `cmd+space` with Alfred)
 - Quick look plugins [github.com/sindresorhus/quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins)
@@ -40,7 +40,6 @@ mackup restore
 
 - Bear
 - BombSquad
-- Spark
 - Pages, Numbers, Keynote
 
 ### From the internet
@@ -48,19 +47,21 @@ mackup restore
 ```
 brew cask install hyper dozer spotify kap calibre slack sourcetree tableplus tresorit
 ```
-
-- DaisyDisk
+- Android Studio
+- Bitwarden
+- DaisyDisk/OmniDiskSweeper
 - DiffMerge
+- Discord
 - Double Shot (keep Mac awake)
 - Figma
 - FontPlop
+- iStat Menus (import settings from dropbox/config)
+- Gitkraken/Sourcetree
 - Lightroom
 - MS Office package
-- Photoshop
 - Screaming From SEO Spider
 - Sketch
 - Skype
-- [Standing Desk App](http://sda.codana.me/)
 - Steam
 - TeamViewer
 - Timely (if time tracking is required)
