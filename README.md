@@ -7,7 +7,7 @@
 ## Getting Started
 
 1. Set system preferences - run `sh set_preferences.sh`
-2. [Install things](first_steps.md)
+2. [Install things](install_things.md)
 
 ## Other guides
 
