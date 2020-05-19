@@ -1,4 +1,4 @@
-# First Steps
+# Install things
 
 ## Step 1: Install basic utils
 
