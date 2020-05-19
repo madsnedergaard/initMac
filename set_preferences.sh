@@ -12,12 +12,8 @@ git config --global user.name "Mads Nedergaard"
 git config --global alias.recent 'for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"'
 git config --global alias.stats 'shortlog -sn --all --no-merges'
 git config --global alias.today 'log --since=midnight --author="Mads Nedergaard" --oneline'
+git config --global alias.yesterday 'log --since=yesterday.midnight --author=\"Mads Nedergaard\" --oneline'
 
-# Keyboard: Set a blazingly fast keyboard repeat rate
-#defaults write NSGlobalDomain KeyRepeat -int 1
-
-# Keyboard: Set a shorter Delay until key repeat
-#defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
@@ -44,7 +40,7 @@ defaults write com.apple.screencapture location ~/Desktop/screenshots
 sudo nvram SystemAudioVolume=" "
 
 # Set a custom text displayed on the login window
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string 'This laptop belongs to Mads Nedergaard. If found, please call +45 50472150'
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string 'This laptop belongs to Mads Nedergaard. If found, please reach out at nedergaardmads@gmail.com'
 
 # Enable "use keyboard navigation to move focus between controls"
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
@@ -72,7 +68,7 @@ chflags nohidden ~/Library
 defaults write com.apple.finder NewWindowTarget PfHm
 
 # Show all filename extensions
-#defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
