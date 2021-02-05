@@ -13,6 +13,7 @@ git config --global alias.recent 'for-each-ref --count=10 --sort=-committerdate 
 git config --global alias.stats 'shortlog -sn --all --no-merges'
 git config --global alias.today 'log --since=midnight --author="Mads Nedergaard" --oneline'
 git config --global alias.yesterday 'log --since=yesterday.midnight --author=\"Mads Nedergaard\" --oneline'
+git config --global alias.up '!git branch --set-upstream-to=origin/$(git symbolic-ref --short HEAD)'
 
 
 # Trackpad: enable tap to click for this user and for the login screen
@@ -56,6 +57,7 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Create default website/code structure
 mkdir -p ~/dev/personal
 mkdir -p ~/dev/play
+mkdir -p ~/dev/work
 
 ############
 ## FINDER ##
