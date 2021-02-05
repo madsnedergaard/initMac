@@ -6,7 +6,7 @@
 
 ## Getting Started
 
-1. Set system preferences - run `sh set_preferences.sh`
+1. Set system preferences - run `sh scripts/set_preferences.sh`
 2. [Install things](install_things.md)
 
 ## Other guides
