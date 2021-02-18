@@ -24,7 +24,7 @@ mackup restore
 
 ## Step 3: Install additional stuff
 
-- `brew install node ruby yarn docker postgresql typescript httpie zsh-syntax-highlighting zsh-autosuggestions`
+- `brew install node ruby yarn docker postgresql typescript httpie zsh-syntax-highlighting zsh-autosuggestions zsh-you-should-use`
 - [Install zsh-z](https://github.com/agkozak/zsh-z)
 - fonts from NAS/backup
 - [BetterTouchTool](https://folivora.ai/) (find license in PW-manager)
