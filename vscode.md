@@ -2,8 +2,8 @@
 
 ## Styling
 
-**Theme:** [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
-**Font:** [Fira Code](https://github.com/tonsky/FiraCode)
+- **Theme:** [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
+- **Font:** [Fira Code](https://github.com/tonsky/FiraCode)
 
 
 ## Extensions
