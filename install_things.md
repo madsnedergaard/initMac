@@ -33,7 +33,13 @@ mackup restore
 - Quick look plugins [github.com/sindresorhus/quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins)
 - Stopwatch (`cp scripts/stopwatch.sh /usr/local/bin/sw`)
 
-## Step 4: Other applications to buy or reinstall
+## Step 4: Note-taking setup
+
+- install [Obsidian](https://obsidian.md)
+- `git clone thoughts repo` (ensure it's in `/dev/personal`)
+- `ln -s ~/Dropbox/notes/Private ~/dev/personal/thoughts/notes/Private` <-- links Private notes
+
+## Step 5: Other applications to buy or reinstall
 
 ### From App Store
 
