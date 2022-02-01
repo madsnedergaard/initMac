@@ -1,5 +1,7 @@
 # Development Setup
 
+`brew install node ruby docker httpie  jq gh gcloud ngrok tldr`
+
 ## JS
 
 - `brew install yarn typescript`
