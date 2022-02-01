@@ -7,7 +7,7 @@
 
 ## Python
 
-1. `brew install pyenv zlib readline xz`
+1. `brew install pyenv zlib xz`
 2. Add this to your `.zshrc` or `.bashrc`:
     ```sh
     if command -v pyenv 1>/dev/null 2>&1; then
