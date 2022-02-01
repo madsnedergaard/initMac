@@ -24,7 +24,7 @@ mackup restore
 
 ## Step 3: Install additional stuff
 
-- `brew install node ruby yarn docker postgresql typescript httpie zsh-syntax-highlighting zsh-autosuggestions zsh-you-should-use`
+- `brew install node ruby pyenv yarn docker postgresql typescript httpie zsh-syntax-highlighting zsh-autosuggestions zsh-you-should-use jq gh gcloud ngrok tldr `
 - [Install zsh-z](https://github.com/agkozak/zsh-z)
 - fonts from NAS/backup
 - [BetterTouchTool](https://folivora.ai/) (find license in PW-manager)
@@ -49,8 +49,8 @@ mackup restore
 
 ### From the internet
 
-```
-brew cask install hyper dozer spotify kap calibre slack sourcetree tableplus tresorit
+```sh
+brew cask install hyper dozer postman spotify kap calibre slack sourcetree tableplus tresorit
 ```
 - Android Studio
 - Bitwarden
@@ -61,14 +61,10 @@ brew cask install hyper dozer spotify kap calibre slack sourcetree tableplus tre
 - Figma
 - FontPlop
 - iStat Menus (import settings from dropbox/config)
-- Gitkraken/Sourcetree
 - Lightroom
 - MS Office package
 - Screaming From SEO Spider
-- Sketch
 - Skype
 - Steam
 - TeamViewer
-- Timely (if time tracking is required)
-- Transmit
 - Zoom
