@@ -2,7 +2,8 @@
 
 ## Step 1: Install basic utils
 
-- Chrome
+- [Bitwarden](https://bitwarden.com)
+- [Chrome](https://www.google.com/chrome/)
 - [Homebrew](https://brew.sh/)
 - Xcode Developer Tools (try running `git --version` and it should show, otherwise: `xcode-select --install`)
 - `brew install cask`
@@ -24,7 +25,7 @@ mackup restore
 
 ## Step 3: Install additional stuff
 
-- `brew install node ruby pyenv yarn docker postgresql typescript httpie zsh-syntax-highlighting zsh-autosuggestions zsh-you-should-use jq gh gcloud ngrok tldr `
+- `brew install node ruby docker httpie zsh-syntax-highlighting zsh-autosuggestions zsh-you-should-use jq gh gcloud ngrok tldr`
 - [Install zsh-z](https://github.com/agkozak/zsh-z)
 - fonts from NAS/backup
 - [BetterTouchTool](https://folivora.ai/) (find license in PW-manager)
