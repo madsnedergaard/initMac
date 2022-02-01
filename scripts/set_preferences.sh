@@ -14,7 +14,8 @@ git config --global alias.stats 'shortlog -sn --all --no-merges'
 git config --global alias.today 'log --since=midnight --author="Mads Nedergaard" --oneline'
 git config --global alias.yesterday 'log --since=yesterday.midnight --author=\"Mads Nedergaard\" --oneline'
 git config --global alias.up '!git branch --set-upstream-to=origin/$(git symbolic-ref --short HEAD)'
-
+git config --global alias.quicklog "log --oneline --decorate -10 --pretty=format:'%C(yellow)%h%C(reset)%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+git config --global alias.quicklog-full "log --oneline --decorate --pretty=format:'%C(yellow)%h%C(reset)%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
@@ -38,7 +39,7 @@ mkdir -p ~/Desktop/screenshots
 defaults write com.apple.screencapture location ~/Desktop/screenshots
 
 #Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+sudo nvram StartupMute=%01
 
 # Set a custom text displayed on the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string 'This laptop belongs to Mads Nedergaard. If found, please reach out at nedergaardmads@gmail.com'
