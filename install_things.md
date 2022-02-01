@@ -2,8 +2,6 @@
 
 ## Step 1: Install basic utils
 
-- [Bitwarden](https://bitwarden.com)
-- [Chrome](https://www.google.com/chrome/)
 - [Homebrew](https://brew.sh/)
 - Xcode Developer Tools (try running `git --version` and it should show, otherwise: `xcode-select --install`)
 - `brew install cask`
@@ -45,6 +43,7 @@ mackup restore
 ### From App Store
 
 - Bear
+- Bitwarden
 - BombSquad
 - Pages, Numbers, Keynote
 
@@ -54,7 +53,7 @@ mackup restore
 brew cask install hyper dozer postman spotify kap calibre slack sourcetree tableplus tresorit
 ```
 - Android Studio
-- Bitwarden
+- [Chrome](https://www.google.com/chrome/)
 - DaisyDisk/OmniDiskSweeper
 - DiffMerge
 - Discord
