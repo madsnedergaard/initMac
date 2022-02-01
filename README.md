@@ -6,8 +6,10 @@
 
 ## Getting Started
 
-1. Set system preferences - run `sh scripts/set_preferences.sh`
-2. [Install things](install_things.md)
+1. Download this repo as a `.zip`
+2. Open Terminal and give it full disk access
+3. Set system preferences - run `sh scripts/set_preferences.sh`
+4. [Install things](install_things.md)
 
 ## Other guides
 
