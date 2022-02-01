@@ -36,6 +36,14 @@
 
 <img width="378" height="205" src="tm_settings.png">
 
+### Spotlight exclusions
+
+- `~/dev`
+- `~/Dropbox`
+- `~/Library`
+- `/System`
+- `/usr`
+
 ---
 
 ## Inspiration
