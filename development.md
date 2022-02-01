@@ -5,12 +5,7 @@
 
 ## Python
 
-1. Add this to your `.zshrc` or `.bashrc`:
-    ```sh
-    if command -v pyenv 1>/dev/null 2>&1; then
-        eval "$(pyenv init -)"
-    fi
-    ```
+1. [Install Poetry](https://python-poetry.org/docs/#osx--linux--bashonwindows-install-instructions)
 2. `pyenv install 3.8.12`
 3. `pyenv global 3.8.12`
 4. Verify that it's working: `python -V`
