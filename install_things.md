@@ -26,7 +26,7 @@ mackup restore
 
 ## Step 3: Install additional stuff
 
-- [Install zsh-z](https://github.com/agkozak/zsh-z)
+- [Install zsh-z](https://github.com/agkozak/zsh-z): `curl https://raw.githubusercontent.com/agkozak/zsh-z/master/zsh-z.plugin.zsh >> /usr/local/share/zsh-z.plugin.zsh`
 - fonts from backup
 - [BetterTouchTool](https://folivora.ai/) (find license in PW-manager)
 - VSCode and add settings-sync extension
