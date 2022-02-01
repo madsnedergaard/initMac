@@ -46,6 +46,7 @@ mackup restore
 - Bitwarden
 - BombSquad
 - Pages, Numbers, Keynote
+- Wipr
 
 ### From the internet
 
