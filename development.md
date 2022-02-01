@@ -2,6 +2,7 @@
 
 ## JS
 
+- `brew install yarn typescript`
 - NVM (See [installation guide](https://github.com/nvm-sh/nvm))
 
 ## Python
