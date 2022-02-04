@@ -36,7 +36,8 @@ sudo nvram StartupMute=%01
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string 'This laptop belongs to Mads Nedergaard. If found, please reach out at nedergaardmads@gmail.com'
 
 # Enable "use keyboard navigation to move focus between controls"
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
+# TODO: Not working in Monterey
+# defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
 
 
 # Expand save panel by default
@@ -156,6 +157,7 @@ echo "All Done! Note that some of these changes require a logout/restart to take
 echo "---"
 printf "Manual changes required:
 - 'auto' appearance in 'general'
+- keyboard > shortcuts > enable 'Use keyboard navigation to move focus between controls'
 - Computer name in 'sharing'
 - Spotlight exclusions: [dev, Dropdox, Downloads] in 'spotlight'
 - Add calendar accounts in 'internet accounts'
