@@ -10,7 +10,6 @@
 _make sure old computer runs `brew bundle dump` and syncs the Brewfile_
 
 ```bash
-cd ~/Dropbox/config/brew
 brew bundle
 ```
 
