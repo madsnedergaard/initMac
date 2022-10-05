@@ -21,7 +21,7 @@
 
 1. Generate new key: `ssh-keygen -t rsa -b 4096 -C "nedergaardmads@gmail.com"`
 2. [Add to ssh-agent](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
-3. Add key to relevant sites (e.g. Github, Bitbucket, etc)
+3. Add key to relevant sites (e.g. Github, GCP, etc.)
    - **Github:** `pbcopy < ~/.ssh/id_rsa.pub` and add it under "Github > Settings > SSH and GPG Keys"
 
 ### Theming
