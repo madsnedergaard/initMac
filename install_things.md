@@ -3,9 +3,9 @@
 ## Step 1: Install brew & packages
 
 1. Install [Homebrew](https://brew.sh/)
-2. Run `brew bundle`
+2. Run `brew bundle --file=~/Dropbox/config/Brewfile`
 
-_make sure old computer runs `brew bundle dump` and updates the Brewfile in Dropbox_
+_make sure old computer runs `brew bundle dump` and replaces the Brewfile in Dropbox_
 
 ## Step 2: Fetch app settings from backup
 
