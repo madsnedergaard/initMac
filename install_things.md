@@ -3,13 +3,19 @@
 ## Step 1: Install brew & packages
 
 1. Install [Homebrew](https://brew.sh/)
-2. Run `brew bundle --file=~/Dropbox/config/Brewfile`
+2. Run `brew bundle install`
 
-_make sure old computer runs `brew bundle dump` and replaces the Brewfile in Dropbox_
+_make sure old computer runs `brew bundle dump` and replaces the Brewfile here_
 
-## Step 2: Fetch app settings from backup
+## Step 2: Dropbox
 
-If using [Mackup](https://github.com/lra/mackup), run the following to fetch application settings from backup. Dropbox must be fully synced before use!
+1. Login to Dropbox app 
+2. Wait for it to sync everything
+
+
+## Step 3: Fetch app settings from backup
+
+If using [Mackup](https://github.com/lra/mackup), run the following to fetch application settings from backup. **Dropbox must be fully synced before use!**
 
 Wait for Dropbox setup and sync, then:
 
@@ -17,13 +23,13 @@ Wait for Dropbox setup and sync, then:
 mackup restore
 ```
 
-## Step 3: Install additional stuff
+## Step 4: Install additional stuff
 
 - [Install zsh-z](https://github.com/agkozak/zsh-z): `curl https://raw.githubusercontent.com/agkozak/zsh-z/master/zsh-z.plugin.zsh >> /usr/local/share/zsh-z.plugin.zsh`
 - fonts from backup
 - Stopwatch (`cp scripts/stopwatch.sh /usr/local/bin/sw`)
 
-## Step 4: Add licenses from PW-manager
+## Step 5: Add licenses from PW-manager
 
 - BetterTouchTool
 - Alfred
