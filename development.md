@@ -19,4 +19,11 @@
 
 ## Setup Git commit signing
 
-TBD
+1. Follow this guide: https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
+2. And this guide: https://gist.github.com/koshatul/2427643668d4e89c0086f297f9ed2130
+
+### Troubleshooting
+
+`Git: gpg failed to sign the data`
+
+Solution: `gpgconf --kill gpg-agent` (restarts the agent)
