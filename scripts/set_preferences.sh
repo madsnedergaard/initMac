@@ -2,11 +2,22 @@
 
 # inspiration: https://mths.be/macos
 
+echo "Setting macOS defaults..."
+
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+
+
 #############
 ## GENERAL ##
 #############
 
 # Git global config is handled by Mackup
+
+# Enable Airdrop
+defaults write com.apple.NetworkBrowser DisableAirDrop -bool NO
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
@@ -31,13 +42,23 @@ defaults write com.apple.screencapture location ~/Desktop/screenshots
 
 #Disable the sound effects on boot
 sudo nvram StartupMute=%01
+sudo nvram SystemAudioVolume=" "
+
+# Increase sound quality for Bluetooth headphones/headsets
+defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 # Set a custom text displayed on the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string 'This laptop belongs to Mads Nedergaard. If found, please reach out at nedergaardmads@gmail.com'
 
 # Enable "use keyboard navigation to move focus between controls"
-# TODO: Not working in Monterey
-# defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
+
+# Set a blazingly fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
+
+# Stop iTunes from responding to the keyboard media keys
+launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
 
 # Expand save panel by default
@@ -119,6 +140,9 @@ defaults write com.apple.dock minimize-to-application -bool true
 # Show Percent Battery in menu bar
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
+# Hide search icon in menu bar
+defaults write com.apple.Spotlight MenuItemHidden -int 1
+
 # RESTARTS THE DOCK AFTER CHANGES
 killall -KILL Dock
 
@@ -130,6 +154,45 @@ killall -KILL Dock
 # Starts week on Monday
 defaults write com.apple.iCal "first day of week" -int 1
 
+# Show week numbers
+defaults write com.apple.iCal "Show Week Numbers" -bool true
+
+############
+## SAFARI ##
+############
+
+# Set Safari’s home page to ‘about:blank’ for faster loading
+defaults write com.apple.Safari HomePage -string "about:blank"
+
+# Prevent Safari from opening ‘safe’ files automatically after downloading
+defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
+
+
+# Hide Safari’s bookmarks bar by default
+defaults write com.apple.Safari ShowFavoritesBar -bool false
+
+# Hide Safari’s sidebar in Top Sites
+defaults write com.apple.Safari ShowSidebarInTopSites -bool false
+
+# Disable Safari’s thumbnail cache for History and Top Sites
+defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
+
+# Enable Safari’s debug menu
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+
+# Make Safari’s search banners default to Contains instead of Starts With
+defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
+
+# Remove useless icons from Safari’s bookmarks bar
+defaults write com.apple.Safari ProxiesInBookmarksBar "()"
+
+# Enable the Develop menu and the Web Inspector in Safari
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+
+# Add a context menu item for showing the Web Inspector in web views
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 ######################
 ## ACTIVITY MONITOR ##
@@ -148,7 +211,6 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
-
 #################
 ## END MESSAGE ##
 #################
@@ -156,12 +218,13 @@ defaults write com.apple.ActivityMonitor SortDirection -int 0
 echo "All Done! Note that some of these changes require a logout/restart to take effect."
 echo "---"
 printf "Manual changes required:
-- 'auto' appearance in 'general'
-- keyboard > shortcuts > enable 'Use keyboard navigation to move focus between controls'
+- Remove Downloads from dock
+- enable Night shift under Displays
 - Computer name in 'sharing'
 - Spotlight exclusions: [dev, Dropdox, Downloads] in 'spotlight'
 - Add calendar accounts in 'internet accounts'
 - Add additional fingerprints in 'touch id'
 - Update profile picture and password in 'users & groups'
 - Time machine exclusions (see img in readme) to 'time machine'
+- Add printers
 "
