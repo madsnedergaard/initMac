@@ -15,3 +15,8 @@
 
 1. `brew install postgresql`
 2. `brew services start postgres`
+
+
+## Setup Git commit signing
+
+TBD
