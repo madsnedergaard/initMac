@@ -9,9 +9,8 @@ _make sure old computer runs `brew bundle dump` and replaces the Brewfile here_
 
 ## Step 2: Dropbox
 
-1. Login to Dropbox app 
+1. Login to Dropbox app
 2. Wait for it to sync everything
-
 
 ## Step 3: Fetch app settings from backup
 
@@ -25,11 +24,12 @@ mackup restore
 
 ## Step 4: Install additional stuff
 
-- [Install zsh-z](https://github.com/agkozak/zsh-z): `curl https://raw.githubusercontent.com/agkozak/zsh-z/master/zsh-z.plugin.zsh >> /usr/local/share/zsh-z.plugin.zsh`
-- fonts from backup
-- Stopwatch (`cp scripts/stopwatch.sh /usr/local/bin/sw`)
+-   XCode (removed from Brewfile as it takes ages and shows no progress)
+-   [Install zsh-z](https://github.com/agkozak/zsh-z): `curl https://raw.githubusercontent.com/agkozak/zsh-z/master/zsh-z.plugin.zsh >> /usr/local/share/zsh-z.plugin.zsh`
+-   fonts from backup
+-   Stopwatch (`cp scripts/stopwatch.sh /usr/local/bin/sw`)
 
 ## Step 5: Add licenses from PW-manager
 
-- BetterTouchTool
-- Alfred
+-   BetterTouchTool
+-   Alfred
