@@ -1,21 +1,22 @@
 # Development Setup
 
-## JS
-- NVM (See [installation guide](https://github.com/nvm-sh/nvm))
+## SSH keys
+
+1. Generate new key: `ssh-keygen -t rsa -b 4096 -C "nedergaardmads@gmail.com"`
+2. [Add to ssh-agent](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
+3. Add key to relevant sites (e.g. Github, GCP, etc.)
+    - **Github:** `pbcopy < ~/.ssh/id_rsa.pub` and add it under "Github > Settings > SSH and GPG Keys"
 
 ## Python
 
-1. [Install Poetry](https://python-poetry.org/docs/#osx--linux--bashonwindows-install-instructions)
-2. `pyenv install 3.8.12`
-3. `pyenv global 3.8.12`
-4. Verify that it's working: `python -V`
-
+1. `pyenv install 3.8.12`
+2. `pyenv global 3.8.12`
+3. Verify that it's working: `python -V`
 
 ## Postgres setup
 
 1. `brew install postgresql`
 2. `brew services start postgres`
-
 
 ## Setup Git commit signing
 
