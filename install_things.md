@@ -25,8 +25,6 @@ mackup restore
 ## Step 4: Install additional stuff
 
 -   XCode (removed from Brewfile as it takes ages and shows no progress)
--   [Install zsh-z](https://github.com/agkozak/zsh-z): `curl https://raw.githubusercontent.com/agkozak/zsh-z/master/zsh-z.plugin.zsh >> /usr/local/share/zsh-z.plugin.zsh`
--   fonts from backup
 -   Stopwatch (`cp scripts/stopwatch.sh /usr/local/bin/sw`)
 
 ## Step 5: Add licenses from PW-manager
