@@ -9,7 +9,8 @@
 1. Download this repo as a `.zip`
 2. Open Terminal and give it full disk access
 3. Set system preferences - run `sh scripts/set_preferences.sh`
-4. [Install things](install_things.md)
+4. Disable Spotlight search commands - run `sh scripts/disable_spotlight_cmd.sh`
+5. [Install things](install_things.md)
 
 ## Other guides
 
