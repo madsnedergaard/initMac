@@ -24,11 +24,12 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-# Disable smart quotes/smart dashes/autocorrection/capitalization
+# Disable smart quotes/smart dashes/autocorrection/capitalization/double-space-period
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 
 # Limit ad tracking
 defaults write com.apple.AdLib forceLimitAdTracking -bool true
@@ -39,6 +40,8 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 #Save screenshots to folder "Screenshots" on `~/desktop`
 mkdir -p ~/Desktop/screenshots
 defaults write com.apple.screencapture location ~/Desktop/screenshots
+# Disable the thumbnail appearing after taking a screenshot
+defaults write com.apple.screencapture "show-thumbnail" -bool "false"
 
 #Disable the sound effects on boot
 sudo nvram StartupMute=%01
@@ -137,14 +140,23 @@ defaults write com.apple.dock show-recents -bool false
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
 
+# Makes the dock appear faster (default is 0.5)
+defaults write com.apple.dock autohide-time-modifier -float 0.2
+defaults write com.apple.dock autohide-delay -float 0.1
+# RESTARTS THE DOCK AFTER CHANGES
+killall -KILL Dock
+
+##########
+## MENU ##
+##########
+
+
 # Show Percent Battery in menu bar
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 # Hide search icon in menu bar
 defaults write com.apple.Spotlight MenuItemHidden -int 1
 
-# RESTARTS THE DOCK AFTER CHANGES
-killall -KILL Dock
 
 
 ##############

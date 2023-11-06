@@ -1,5 +1,13 @@
 # Development Setup
 
+## GCloud Proxy
+
+_Used for connecting to GCP services_
+
+```sh
+mkdir ~/.gcloud && cp ~/Dropbox/config/cloud_sql_proxy ~/.gcloud/cloud_sql_proxy
+```
+
 ## SSH keys
 
 1. Generate new key: `ssh-keygen -t rsa -b 4096 -C "nedergaardmads@gmail.com"`
@@ -12,6 +20,12 @@
 1. `pyenv install 3.8.12`
 2. `pyenv global 3.8.12`
 3. Verify that it's working: `python -V`
+
+### Poetry
+
+```bash
+pipx install poetry
+```
 
 ## Postgres setup
 

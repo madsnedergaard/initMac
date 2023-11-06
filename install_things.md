@@ -26,8 +26,3 @@ mackup restore
 
 -   XCode (removed from Brewfile as it takes ages and shows no progress)
 -   Stopwatch (`cp scripts/stopwatch.sh /usr/local/bin/sw`)
-
-## Step 5: Add licenses from PW-manager
-
--   BetterTouchTool
--   Alfred
