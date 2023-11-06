@@ -26,6 +26,11 @@
 -   Slack `#282A36,#324050,#324050,#57C7FF,#324050,#EFF0EB,#5AF78E,#FF5C57`
 -   Terminal: Uses zsh and [pure prompt](https://github.com/sindresorhus/pure)
 
+### Backing things up
+
+-   Update Brewfile: `brew bundle dump --force`
+-   Config files are backed up using Mackup (see [Install things](install_things.md)), but might need to switch for MacOS Sonoma
+
 ### Timemachine exclusions
 
 <img width="378" height="205" src="tm_settings.png">
