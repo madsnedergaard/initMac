@@ -16,10 +16,17 @@ _make sure old computer runs `brew bundle dump` and replaces the Brewfile here_
 
 If using [Mackup](https://github.com/lra/mackup), run the following to fetch application settings from backup. **Dropbox must be fully synced before use!**
 
-Wait for Dropbox setup and sync, then:
+**NOTE: Currently broken due to https://github.com/lra/mackup/issues/1924**
+
+Current approach:
+
+-   Backup: `$ mackup backup --force && mackup uninstall --force`
+-   Restore: `$ mackup restore --force && mackup uninstall --force``
+
+~~Wait for Dropbox setup and sync, then:~~
 
 ```bash
-mackup restore
+# mackup restore
 ```
 
 ## Step 4: Install additional stuff
