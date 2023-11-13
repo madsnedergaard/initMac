@@ -20,16 +20,13 @@ If using [Mackup](https://github.com/lra/mackup), run the following to fetch app
 
 Current approach:
 
--   Backup: `$ mackup backup --force && mackup uninstall --force`
--   Restore: `$ mackup restore --force && mackup uninstall --force``
+-   Backup: `mackup backup --force && mackup uninstall --force`
+-   Restore: `mackup restore --force && mackup uninstall --force`
 
-~~Wait for Dropbox setup and sync, then:~~
-
-```bash
-# mackup restore
-```
+~~Wait for Dropbox setup and sync, then run `mackup restore`~~
 
 ## Step 4: Install additional stuff
 
 -   XCode (removed from Brewfile as it takes ages and shows no progress)
+    - `mas install Xcode` or `mas upgrade Xcode`
 -   Stopwatch (`cp scripts/stopwatch.sh /usr/local/bin/sw`)
