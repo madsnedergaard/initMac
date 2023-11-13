@@ -29,7 +29,10 @@
 ### Backing things up
 
 -   Update Brewfile: `brew bundle dump --force`
--   Config files are backed up using Mackup (see [Install things](install_things.md)), but might need to switch for MacOS Sonoma
+-   Config files are backed up using Mackup (see [Install things](install_things.md)), but might need to switch for MacOS Sonoma.
+    -   `mackup backup --force && mackup uninstall --force`
+    -   `mackup restore --force && mackup uninstall --force`
+
 
 ### Timemachine exclusions
 
