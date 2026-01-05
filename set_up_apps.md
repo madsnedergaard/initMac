@@ -2,20 +2,15 @@
 
 ### Karabiner
 
-1. open the app and go through all the permissions
-
-### Alfred
-
-1. open app, give permissions, change command `HYPER+A`,
-2. go to settings and set sync folder to `~/Dropbox/config/alfred`
+Open the app and grant all the permissions.
 
 ### Raycast
 
-1. Import settings file from `~/Dropbox/config/raycast` - make sure to export the latest on old computer first!
+Import settings file from `~/Dropbox/config/raycast` - make sure to export the latest on old computer first!
 
 ### Cursor
 
--   Open app and turn on Settings Sync (login with Github)
+Open the app and turn on Settings Sync (login with Github).
 
 ### Hidden Bar
 
@@ -24,16 +19,4 @@
 
 ## Anything else
 
--   Go through /Applications and open all relevant apps to log in and sync
-
-### Apps not tracked via cask
-
-These apps are not yet tracked via cask, please install via brew to have them tracked for future:
-
--   Arc
--   Cursor
--   Discord
--   Figma
--   Proxyman
--   Vial
--   Zen
+Go through /Applications and open all relevant apps to log in and sync.
