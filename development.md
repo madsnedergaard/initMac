@@ -1,44 +1,34 @@
 # Development Setup
 
-## GCloud Proxy
+## Generating new SSH keys
 
-_Used for connecting to GCP services_
+1. [Generate new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+2. Add it to GitHub: `gh ssh-key add ~/.ssh/id_ed25519.pub --type signing`
 
-```sh
-mkdir ~/.gcloud && cp ~/Dropbox/config/cloud_sql_proxy ~/.gcloud/cloud_sql_proxy
-```
+## Generating new GPG key
 
-## SSH keys
+1. [Generate new GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+2. Add it to git config: `git config --global user.signingkey <YOUR_GPG_KEY_ID>`
+3. [Add it to GitHub](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account#adding-a-gpg-key)
 
-1. Generate new key: `ssh-keygen -t rsa -b 4096 -C "nedergaardmads@gmail.com"`
-2. [Add to ssh-agent](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
-3. Add key to relevant sites (e.g. Github, GCP, etc.)
-    - **Github:** `pbcopy < ~/.ssh/id_rsa.pub` and add it under "Github > Settings > SSH and GPG Keys"
-
-## Python
-
-1. `pyenv install 3.8.12`
-2. `pyenv global 3.8.12`
-3. Verify that it's working: `python -V`
-
-### Poetry
+## Poetry
 
 ```bash
 pipx install poetry
 ```
 
-## Postgres setup
+## Postgres
+
+**NOTE: Only use this if not running via Docker**
 
 1. `brew install postgresql`
 2. `brew services start postgres`
 
-## Setup Git commit signing
+## GCloud
 
-1. Follow this guide: https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
-2. And this guide: https://gist.github.com/koshatul/2427643668d4e89c0086f297f9ed2130
+Make sure the cloud-sql-proxy is installed: `brew install cloud-sql-proxy`
 
-### Troubleshooting
-
-`Git: gpg failed to sign the data`
-
-Solution: `gpgconf --kill gpg-agent` (restarts the agent)
+```bash
+gcloud auth application-default login
+gcloud auth login
+```
